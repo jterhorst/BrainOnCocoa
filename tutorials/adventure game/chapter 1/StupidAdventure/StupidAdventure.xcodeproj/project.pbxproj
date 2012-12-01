@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		96AF92031662DDA400CCC13F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96AF92021662DDA400CCC13F /* Cocoa.framework */; };
+		96AF920D1662DDA400CCC13F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96AF920B1662DDA400CCC13F /* InfoPlist.strings */; };
+		96AF920F1662DDA400CCC13F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AF920E1662DDA400CCC13F /* main.m */; };
+		96AF92131662DDA400CCC13F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 96AF92111662DDA400CCC13F /* Credits.rtf */; };
+		96AF92161662DDA400CCC13F /* JTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AF92151662DDA400CCC13F /* JTAppDelegate.m */; };
+		96AF92191662DDA500CCC13F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96AF92171662DDA500CCC13F /* MainMenu.xib */; };
+		96AF92211662E22600CCC13F /* JTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AF92201662E22600CCC13F /* JTPlayerView.m */; };
+		96AF92241662E29100CCC13F /* JTPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AF92231662E29100CCC13F /* JTPlayer.m */; };
+		96AF92271662E2A900CCC13F /* JTRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AF92261662E2A900CCC13F /* JTRoom.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		96AF91FE1662DDA400CCC13F /* StupidAdventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StupidAdventure.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96AF92021662DDA400CCC13F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		96AF92051662DDA400CCC13F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		96AF92061662DDA400CCC13F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		96AF92071662DDA400CCC13F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		96AF920A1662DDA400CCC13F /* StupidAdventure-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StupidAdventure-Info.plist"; sourceTree = "<group>"; };
+		96AF920C1662DDA400CCC13F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		96AF920E1662DDA400CCC13F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		96AF92101662DDA400CCC13F /* StupidAdventure-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StupidAdventure-Prefix.pch"; sourceTree = "<group>"; };
+		96AF92121662DDA400CCC13F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		96AF92141662DDA400CCC13F /* JTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTAppDelegate.h; sourceTree = "<group>"; };
+		96AF92151662DDA400CCC13F /* JTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTAppDelegate.m; sourceTree = "<group>"; };
+		96AF92181662DDA500CCC13F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		96AF921F1662E22600CCC13F /* JTPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTPlayerView.h; sourceTree = "<group>"; };
+		96AF92201662E22600CCC13F /* JTPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTPlayerView.m; sourceTree = "<group>"; };
+		96AF92221662E29100CCC13F /* JTPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTPlayer.h; sourceTree = "<group>"; };
+		96AF92231662E29100CCC13F /* JTPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTPlayer.m; sourceTree = "<group>"; };
+		96AF92251662E2A900CCC13F /* JTRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTRoom.h; sourceTree = "<group>"; };
+		96AF92261662E2A900CCC13F /* JTRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTRoom.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96AF91FB1662DDA400CCC13F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96AF92031662DDA400CCC13F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		96AF91F31662DDA400CCC13F = {
+			isa = PBXGroup;
+			children = (
+				96AF92081662DDA400CCC13F /* StupidAdventure */,
+				96AF92011662DDA400CCC13F /* Frameworks */,
+				96AF91FF1662DDA400CCC13F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		96AF91FF1662DDA400CCC13F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96AF91FE1662DDA400CCC13F /* StupidAdventure.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96AF92011662DDA400CCC13F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96AF92021662DDA400CCC13F /* Cocoa.framework */,
+				96AF92041662DDA400CCC13F /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96AF92041662DDA400CCC13F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96AF92051662DDA400CCC13F /* AppKit.framework */,
+				96AF92061662DDA400CCC13F /* CoreData.framework */,
+				96AF92071662DDA400CCC13F /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		96AF92081662DDA400CCC13F /* StupidAdventure */ = {
+			isa = PBXGroup;
+			children = (
+				96AF92141662DDA400CCC13F /* JTAppDelegate.h */,
+				96AF92151662DDA400CCC13F /* JTAppDelegate.m */,
+				96AF92171662DDA500CCC13F /* MainMenu.xib */,
+				96AF92091662DDA400CCC13F /* Supporting Files */,
+				96AF921F1662E22600CCC13F /* JTPlayerView.h */,
+				96AF92201662E22600CCC13F /* JTPlayerView.m */,
+				96AF92221662E29100CCC13F /* JTPlayer.h */,
+				96AF92231662E29100CCC13F /* JTPlayer.m */,
+				96AF92251662E2A900CCC13F /* JTRoom.h */,
+				96AF92261662E2A900CCC13F /* JTRoom.m */,
+			);
+			path = StupidAdventure;
+			sourceTree = "<group>";
+		};
+		96AF92091662DDA400CCC13F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				96AF920A1662DDA400CCC13F /* StupidAdventure-Info.plist */,
+				96AF920B1662DDA400CCC13F /* InfoPlist.strings */,
+				96AF920E1662DDA400CCC13F /* main.m */,
+				96AF92101662DDA400CCC13F /* StupidAdventure-Prefix.pch */,
+				96AF92111662DDA400CCC13F /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96AF91FD1662DDA400CCC13F /* StupidAdventure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96AF921C1662DDA500CCC13F /* Build configuration list for PBXNativeTarget "StupidAdventure" */;
+			buildPhases = (
+				96AF91FA1662DDA400CCC13F /* Sources */,
+				96AF91FB1662DDA400CCC13F /* Frameworks */,
+				96AF91FC1662DDA400CCC13F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StupidAdventure;
+			productName = StupidAdventure;
+			productReference = 96AF91FE1662DDA400CCC13F /* StupidAdventure.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96AF91F51662DDA400CCC13F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JT;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Jason Terhorst";
+			};
+			buildConfigurationList = 96AF91F81662DDA400CCC13F /* Build configuration list for PBXProject "StupidAdventure" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 96AF91F31662DDA400CCC13F;
+			productRefGroup = 96AF91FF1662DDA400CCC13F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96AF91FD1662DDA400CCC13F /* StupidAdventure */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96AF91FC1662DDA400CCC13F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96AF920D1662DDA400CCC13F /* InfoPlist.strings in Resources */,
+				96AF92131662DDA400CCC13F /* Credits.rtf in Resources */,
+				96AF92191662DDA500CCC13F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96AF91FA1662DDA400CCC13F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96AF920F1662DDA400CCC13F /* main.m in Sources */,
+				96AF92161662DDA400CCC13F /* JTAppDelegate.m in Sources */,
+				96AF92211662E22600CCC13F /* JTPlayerView.m in Sources */,
+				96AF92241662E29100CCC13F /* JTPlayer.m in Sources */,
+				96AF92271662E2A900CCC13F /* JTRoom.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		96AF920B1662DDA400CCC13F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96AF920C1662DDA400CCC13F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		96AF92111662DDA400CCC13F /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96AF92121662DDA400CCC13F /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		96AF92171662DDA500CCC13F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96AF92181662DDA500CCC13F /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96AF921A1662DDA500CCC13F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		96AF921B1662DDA500CCC13F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		96AF921D1662DDA500CCC13F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StupidAdventure/StupidAdventure-Prefix.pch";
+				INFOPLIST_FILE = "StupidAdventure/StupidAdventure-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		96AF921E1662DDA500CCC13F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StupidAdventure/StupidAdventure-Prefix.pch";
+				INFOPLIST_FILE = "StupidAdventure/StupidAdventure-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96AF91F81662DDA400CCC13F /* Build configuration list for PBXProject "StupidAdventure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96AF921A1662DDA500CCC13F /* Debug */,
+				96AF921B1662DDA500CCC13F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96AF921C1662DDA500CCC13F /* Build configuration list for PBXNativeTarget "StupidAdventure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96AF921D1662DDA500CCC13F /* Debug */,
+				96AF921E1662DDA500CCC13F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96AF91F51662DDA400CCC13F /* Project object */;
+}
