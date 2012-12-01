@@ -1,5 +1,5 @@
 Hi!
-In this tutorial, I'm going to quickly run through the beginnings of a simple adventure game for the Mac. There are 5 buttons: up, down, left, and right, and a button to start or reset the game. The red square is the player, and there's obviously no clipping in place yet.
+In this tutorial, I'm going to quickly run through the beginnings of a simple Zelda-like adventure game for the Mac. There are 5 buttons: up, down, left, and right, and a button to start or reset the game. The red square is the player, and there's obviously no clipping in place yet.
 
 Let's get started.
 
@@ -25,7 +25,7 @@ Double-click to change it and type "North". Resize it.
 
 Make more buttons by duplicating this one with Command-D. Drag them around and line them up.
 
-To make these buttons do something, let's go to our File's Owner, which is JTAppDelegate.h and add in the declarations for those button actions.
+To make these buttons do something, let's go to our AppDelegate, which is JTAppDelegate.h and add in the declarations for those button actions.
 
 ````
 - (IBAction)startGame:(id)sender;
@@ -38,23 +38,42 @@ To make these buttons do something, let's go to our File's Owner, which is JTApp
 
 Also paste these into the .m, but add curly braces after each. This is where we'll put the code that those buttons trigger. The .h just informs Interface Builder and other parts of our app as to what to expect this AppDelegate to do.
 
-In each code stub, add a line with an NSLog, just to see the console confirm when our buttons work correctly.
-
 ````
-NSLog(@"north");
-NSLog(@"south");
-NSLog(@"east");
-NSLog(@"west");
-NSLog(@"restart game");
+- (IBAction)startGame:(id)sender;
+{
+	NSLog(@"restart game");
+}
+
+- (IBAction)goNorth:(id)sender;
+{
+	NSLog(@"north");
+}
+
+- (IBAction)goSouth:(id)sender;
+{
+	NSLog(@"south");
+}
+
+- (IBAction)goEast:(id)sender;
+{
+	NSLog(@"east");
+}
+
+- (IBAction)goWest:(id)sender;
+{
+	NSLog(@"west");
+}
 ````
 
-Go back to MainMenu.xib, and let's hook them up. Hold down "Control", and left-drag from the button to "File's Owner". Select the cooresponding action from the popup for that button.
+In each code stub, I've added a line with an NSLog, just to see the console confirm when our buttons work correctly.
+
+Go back to MainMenu.xib, and let's hook them up. Hold down "Control", and left-drag from the button to "AppDelegate". Select the cooresponding action from the popup for that button.
 
 Okay, good. Now click the Play button in the top-left corner of the Xcode project, and let's run our app!
 
 The console should open and spit something out when you click the buttons. If it doesn't, you need to go back and double-check your button connections.
 
-In our game, we're going to have at least one player, and many rooms, and eventually those rooms will contain many enemies. Each of these will be an object, each type of which is declared by a class: a player class and a room class for now. We need to create these two classes.
+In our game, we're going to have at least one player, and many rooms. Each of these will be an object, each type of which is declared by a class: a player class and a room class for now. These classes function as a blueprint for each of these types of objects. We need to create these two classes.
 
 In Xcode, right-click the top-most directory of the project, and choose "New file...". Under "OS X", choose "Cocoa", and make it an "Objective-C class". Next. The Class will be named "JTPlayer", and it's a subclass of NSObject. Next. Save the file in the project directory.
 
@@ -288,7 +307,8 @@ Also, do an ````#import "JTPlayerView.h"```` at the top to load in that code.
 
 
 Click on MainMenu.xib, bring your window up again, and in the Object Library, find "Custom View" about halfway down. Drag it into the window top-left, and resize to fit. In the properties for the view, we must declare the class to "JTPlayerView" and press return.
-Confirm it shows in the view itself, then control-drag from your view to "File's Owner", and connect it as dataSource. Then, control-drag back in the other direction and hook it up with playerView.
+
+Confirm it shows in the view itself, then control-drag from your view to "AppDelegate", and connect it as dataSource. Then, control-drag back in the other direction and hook it up with playerView.
 
 Once we implement those dataSource methods in the AppDelegate, the view will be able to see the rooms and player's position.
 
@@ -343,6 +363,10 @@ Okay, now let's update our north/south/east/west buttons to move our player arou
 	[self.playerView updateView];
 }
 ````
+
+You'll notice this code "normalizes" the x and y positions to center drawing. I did this so the player appears in the middle of the view. But you might notice that the y-position is upside-down for the rooms. If you've ever worked with iOS drawing, you know that the zero-zero position is in the top-left. That makes sense. But the Mac's Quartz drawing, based on Postscript, has a bottom-to-top y-coordinate. Just something to watch out for as you work with custom drawing.
+
+
 
 And that should do it. You can now run the app, and move your player around.
 
