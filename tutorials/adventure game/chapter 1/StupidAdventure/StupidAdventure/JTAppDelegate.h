@@ -19,13 +19,6 @@
 @property (assign) IBOutlet JTPlayerView * playerView;
 
 
-@property (nonatomic, assign) IBOutlet NSButton * startButton;
-
-@property (nonatomic, assign) IBOutlet NSButton * northButton;
-@property (nonatomic, assign) IBOutlet NSButton * southButton;
-@property (nonatomic, assign) IBOutlet NSButton * eastButton;
-@property (nonatomic, assign) IBOutlet NSButton * westButton;
-
 @property (nonatomic, strong) JTPlayer * currentPlayer;
 @property (nonatomic, strong) NSMutableArray * rooms;
 
